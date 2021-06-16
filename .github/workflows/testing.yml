@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    step:
+    steps:
     - uses: actions/checkout@v2
     - name: Setup Python 3.7
       uses: actions/setup-python@v2
@@ -33,4 +33,3 @@ jobs:
     - name: Django Testing
       run: |
         python3 manage.py test
-        
